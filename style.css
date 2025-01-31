@@ -1,0 +1,172 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333; /* Dark background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  }
+
+  .navbar-brand {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 700;
+    color: #f39c12 !important; /* Gold color for the brand */
+    text-transform: uppercase;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    color: #f1f1f1 !important; /* Light text color */
+    padding: 0.8rem 1.5rem;
+    position: relative;
+    transition: color 0.3s ease, padding 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #f39c12 !important; /* Gold color on hover */
+    font-weight: 600;
+    padding-bottom: 1rem;
+  }
+
+  .navbar-nav .nav-link:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #f39c12; /* Gold underline */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navbar-nav .nav-link:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+  /* Navbar Toggle (hamburger) */
+  .navbar-toggler-icon {
+    background-color: #f39c12;
+  }
+
+  /* Active link state */
+  .navbar-nav .nav-link.active {
+    color: #f39c12 !important;
+    font-weight: 600;
+  }
+
+/* Hero Section */
+.hero {
+    background-color: #007bff;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.hero .display-4 {
+    font-size: 3rem;
+}
+
+.hero .lead {
+    font-size: 1.25rem;
+}
+
+/* Menu Section */
+#menu {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+#menu .card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#menu .card-body {
+    text-align: center;
+}
+
+#menu .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#menu .card-text {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3;
+}
+
+/* Cart and Order Section */
+#cart-order {
+    padding: 40px 0;
+}
+
+#cart {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#order {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#cart-items {
+    margin-bottom: 20px;
+}
+
+#clear-cart {
+    width: 100%;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#clear-cart:hover {
+    background-color: #c82333;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 15px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}

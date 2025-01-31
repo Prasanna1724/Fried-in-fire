@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Ordering</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Fried In Fire</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cart">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#order">Order</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero bg-primary text-white text-center py-5">
+      <div class="container">
+        <h1 class="display-4">Welcome to Fried In Fire</h1>
+        <p class="lead">
+          Order your favorite fried chicken and have it delivered to your door..!
+        </p>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5" style="background-color: aquamarine;">
+      <div class="container" style="background-color: gold;">
+        <h2 class="text-center mb-5">Our Menu</h2>
+        <div class="row">
+          <!-- Food Item 1 -->
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img src="images/img1.jpeg" class="card-img-top" />
+                  <div class="card-body">
+                      <h5 class="card-title">Chicken 65</h5>
+                      <p class="card-text">
+                          A popular South Indian appetizer known for its tangy, spicy,
+                          and savory flavor. It's deep-fried and typically served with
+                          curry leaves.
+                      </p>
+                      <p class="card-text"><strong>₹49</strong></p>
+                      <button class="btn btn-primary add-to-cart" data-name="Chicken 65" data-price="49">
+                          Add to Cart
+                      </button>
+                      <div class="quantity-control" style="display: none;">
+                          <button class="btn btn-secondary decrement">-</button>
+                          <span class="quantity">1</span>
+                          <button class="btn btn-secondary increment">+</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          <!-- Food Item 2 -->
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img src="images/img2.jpeg" class="card-img-top" alt="Pizza" />
+                  <div class="card-body">
+                      <h5 class="card-title">Chicken and Waffles</h5>
+                      <p class="card-text">
+                          A delicious American dish combining crispy fried chicken with
+                          soft, sweet waffles. Often topped with syrup and served as a
+                          breakfast or brunch.
+                      </p>
+                      <p class="card-text"><strong>₹59</strong></p>
+                      <button class="btn btn-primary add-to-cart" data-name="Chicken and Waffles" data-price="59">
+                          Add to Cart
+                      </button>
+                      <div class="quantity-control" style="display: none;">
+                          <button class="btn btn-secondary decrement">-</button>
+                          <span class="quantity">1</span>
+                          <button class="btn btn-secondary increment">+</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          <!-- Food Item 3 -->
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img src="images/img3.jpeg" class="card-img-top" alt="Pasta" />
+                  <div class="card-body">
+                      <h5 class="card-title">Buffalo Wings</h5>
+                      <p class="card-text">
+                          Spicy, deep-fried chicken wings coated in tangy buffalo sauce. A classic American dish typically served as an appetizer.
+                      </p>
+                      <p class="card-text"><strong>₹79</strong></p>
+                      <button class="btn btn-primary add-to-cart" data-name="Buffalo Wings" data-price="79">
+                          Add to Cart
+                      </button>
+                      <div class="quantity-control" style="display: none;">
+                          <button class="btn btn-secondary decrement">-</button>
+                          <span class="quantity">1</span>
+                          <button class="btn btn-secondary increment">+</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          <!-- Food Item 4 -->
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img src="images/img4.jpeg" class="card-img-top" alt="Steak" />
+                  <div class="card-body">
+                      <h5 class="card-title">Lemon-Brined Fried Chicken</h5>
+                      <p class="card-text">
+                          Lemon-brined fried chicken is chicken marinated in a brine made from lemon juice, water, and seasoning, which enhances flavor and tenderness
+                      </p>
+                      <p class="card-text"><strong>₹69</strong></p>
+                      <button class="btn btn-primary add-to-cart" data-name="Lemon-Brined Fried Chicken" data-price="69">
+                          Add to Cart
+                      </button>
+                      <div class="quantity-control" style="display: none;">
+                          <button class="btn btn-secondary decrement">-</button>
+                          <span class="quantity">1</span>
+                          <button class="btn btn-secondary increment">+</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          <!-- Food Item 5 -->
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img src="images/img5.jpeg" class="card-img-top" alt="Fried Chicken" />
+                  <div class="card-body">
+                      <h5 class="card-title">Chicken Nuggets</h5>
+                      <p class="card-text">
+                          Small, breaded, and deep-fried chicken pieces, often made from ground chicken. Popular as a snack or meal in many countries.
+                      </p>
+                      <p class="card-text"><strong>₹59</strong></p>
+                      <button class="btn btn-primary add-to-cart" data-name="Chicken Nuggets" data-price="59">
+                          Add to Cart
+                      </button>
+                      <div class="quantity-control" style="display: none;">
+                          <button class="btn btn-secondary decrement">-</button>
+                          <span class="quantity">1</span>
+                          <button class="btn btn-secondary increment">+</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          <!-- Food Item 6 -->
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img src="images/img6.jpeg" class="card-img-top" alt="Sushi" />
+                  <div class="card-body">
+                      <h5 class="card-title">Chicken Katsu</h5>
+                      <p class="card-text">
+                          A Japanese dish consisting of breaded and deep-fried chicken cutlets. Typically served with rice and tonkatsu sauce.
+                      </p>
+                      <p class="card-text"><strong>₹79</strong></p>
+                      <button class="btn btn-primary add-to-cart" data-name="Chicken Katsu" data-price="79">
+                          Add to Cart
+                      </button>
+                      <div class="quantity-control" style="display: none;">
+                          <button class="btn btn-secondary decrement">-</button>
+                          <span class="quantity">1</span>
+                          <button class="btn btn-secondary increment">+</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          <!-- Food Item 7 -->
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img src="images/img7.jpeg" class="card-img-top" alt="Tacos" />
+                  <div class="card-body">
+                      <h5 class="card-title">Chicken Kiev</h5>
+                      <p class="card-text">
+                          A Russian and Ukrainian dish featuring chicken breasts stuffed with a garlic herb butter, then breaded and fried. Known for its rich flavor.
+                      </p>
+                      <p class="card-text"><strong>₹59</strong></p>
+                      <button class="btn btn-primary add-to-cart" data-name="Chicken Kiev" data-price="59">
+                          Add to Cart
+                      </button>
+                      <div class="quantity-control" style="display: none;">
+                          <button class="btn btn-secondary decrement">-</button>
+                          <span class="quantity">1</span>
+                          <button class="btn btn-secondary increment">+</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          <!-- Food Item 8 -->
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img src="images/img8.jpeg" class="card-img-top" alt="Salad" />
+                  <div class="card-body">
+                      <h5 class="card-title">Chicken Lollipop</h5>
+                      <p class="card-text">
+                          A flavorful Indian appetizer where chicken wings are marinated, deep-fried, and served as a finger food with a tangy sauce.
+                      </p>
+                      <p class="card-text"><strong>₹49</strong></p>
+                      <button class="btn btn-primary add-to-cart" data-name="Chicken Lollipop" data-price="49">
+                          Add to Cart
+                      </button>
+                      <div class="quantity-control" style="display: none;">
+                          <button class="btn btn-secondary decrement">-</button>
+                          <span class="quantity">1</span>
+                          <button class="btn btn-secondary increment">+</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          <!-- Food Item 9 -->
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img src="images/img9.jpeg" class="card-img-top" alt="Smoothie" />
+                  <div class="card-body">
+                      <h5 class="card-title">Chicken Maryland</h5>
+                      <p class="card-text">
+                          A classic American dish with fried chicken served alongside creamy, rich sauce, often accompanied by mashed potatoes or vegetables.
+                      </p>
+                      <p class="card-text"><strong>₹69</strong></p>
+                      <button class="btn btn-primary add-to-cart" data-name="Chicken Maryland" data-price="69">
+                          Add to Cart
+                      </button>
+                      <div class="quantity-control" style="display: none;">
+                          <button class="btn btn-secondary decrement">-</button>
+                          <span class="quantity">1</span>
+                          <button class="btn btn-secondary increment">+</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          <!-- Food Item 10 -->
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img src="images/img10.jpeg" class="card-img-top" alt="Burrito" />
+                  <div class="card-body">
+                      <h5 class="card-title">Ayam Goreng</h5>
+                      <p class="card-text">
+                          A flavorful Indonesian and Malay fried chicken, marinated with a blend of spices and then deep-fried for a crispy exterior.
+                      </p>
+                      <p class="card-text"><strong>₹79</strong></p>
+                      <button class="btn btn-primary add-to-cart" data-name="Ayam Goreng" data-price="79">
+                          Add to Cart
+                      </button>
+                      <div class="quantity-control" style="display: none;">
+                          <button class="btn btn-secondary decrement">-</button>
+                          <span class="quantity">1</span>
+                          <button class="btn btn-secondary increment">+</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          <!-- Food Item 11 -->
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img src="images/img11.jpeg" class="card-img-top" alt="Donuts" />
+                  <div class="card-body">
+                      <h5 class="card-title">Barberton Chicken</h5>
+                      <p class="card-text">
+                          A Serbian-American fried chicken dish with a crispy coating. Served with sides like coleslaw and potatoes, popular in Barberton, Ohio.
+                      </p>
+                      <p class="card-text"><strong>₹59</strong></p>
+                      <button class="btn btn-primary add-to-cart" data-name="Barberton Chicken" data-price="59">
+                          Add to Cart
+                      </button>
+                      <div class="quantity-control" style="display: none;">
+                          <button class="btn btn-secondary decrement">-</button>
+                          <span class="quantity">1</span>
+                          <button class="btn btn-secondary increment">+</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          <!-- Food Item 12 -->
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img src="images/img12.jpeg" class="card-img-top" alt="Ramen" />
+                  <div class="card-body">
+                      <h5 class="card-title">Cashew Chicken</h5>
+                      <p class="card-text">
+                          A Chinese-American dish with stir-fried chicken, roasted cashews, and a savory sauce. A flavorful and nutty combination often served with rice.
+                      </p>
+                      <p class="card-text"><strong>₹89</strong></p>
+                      <button class="btn btn-primary add-to-cart" data-name="Cashew Chicken" data-price="89">
+                          Add to Cart
+                      </button>
+                      <div class="quantity-control" style="display: none;">
+                          <button class="btn btn-secondary decrement">-</button>
+                          <span class="quantity">1</span>
+                          <button class="btn btn-secondary increment">+</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- Cart Display -->
+      <center><div id="cart">
+          <h2>Cart</h2>
+          <ul id="cart-items">
+              <!-- Cart items will appear here -->
+          </ul>
+          <p id="cart-total">Total: ₹0</p>
+          <button id="clear-cart" class="btn btn-danger mt-3">
+            Clear Cart
+          </button>
+          <script>
+            let cart = [];
+            
+            // Function to update the cart display
+            function updateCart() {
+                const cartItemsContainer = document.getElementById('cart-items');
+                const cartTotal = document.getElementById('cart-total');
+                cartItemsContainer.innerHTML = '';  // Clear previous cart items
+            
+                // Iterate through cart and add each item to the display
+                let total = 0;
+                cart.forEach(item => {
+                    const cartItem = document.createElement('li');
+                    cartItem.textContent = `${item.name} - ₹${item.price} x ${item.quantity} = ₹${item.price * item.quantity}`;
+                    cartItemsContainer.appendChild(cartItem);
+                    total += item.price * item.quantity;
+                });
+            
+                cartTotal.textContent = `Total: ₹${total}`;
+            }
+            
+            // Add event listener to all 'Add to Cart' buttons
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const itemName = e.target.dataset.name;
+                    const itemPrice = parseFloat(e.target.dataset.price);
+            
+                    // Add the item to the cart if it's not already in the cart
+                    const existingItem = cart.find(item => item.name === itemName);
+            
+                    if (existingItem) {
+                        // If item already exists, just increase the quantity
+                        existingItem.quantity++;
+                    } else {
+                        // Add new item to the cart
+                        cart.push({ name: itemName, price: itemPrice, quantity: 1 });
+                    }
+            
+                    // Hide "Add to Cart" button and show the quantity control
+                    const cardBody = e.target.closest('.card-body');
+                    cardBody.querySelector('.quantity-control').style.display = 'inline-flex';
+                    e.target.style.display = 'none';
+            
+                    // Set initial quantity to 1
+                    const quantityDisplay = cardBody.querySelector('.quantity');
+                    quantityDisplay.textContent = 1;
+            
+                    // Update the cart display
+                    updateCart();
+                });
+            });
+            
+            // Event listener for decrement button
+            document.body.addEventListener('click', function(e) {
+                if (e.target && e.target.classList.contains('decrement')) {
+                    const quantityDisplay = e.target.closest('.quantity-control').querySelector('.quantity');
+                    let quantity = parseInt(quantityDisplay.textContent);
+                    if (quantity > 1) {
+                        quantity--;
+                        quantityDisplay.textContent = quantity;
+                    }
+            
+                    // Update the cart item quantity
+                    const itemName = e.target.closest('.card-body').querySelector('.add-to-cart').dataset.name;
+                    const item = cart.find(item => item.name === itemName);
+                    if (item) {
+                        item.quantity = quantity;
+                    }
+            
+                    // Update the cart display
+                    updateCart();
+                }
+            });
+            
+            // Event listener for increment button
+            document.body.addEventListener('click', function(e) {
+                if (e.target && e.target.classList.contains('increment')) {
+                    const quantityDisplay = e.target.closest('.quantity-control').querySelector('.quantity');
+                    let quantity = parseInt(quantityDisplay.textContent);
+                    quantity++;
+                    quantityDisplay.textContent = quantity;
+            
+                    // Update the cart item quantity
+                    const itemName = e.target.closest('.card-body').querySelector('.add-to-cart').dataset.name;
+                    const item = cart.find(item => item.name === itemName);
+                    if (item) {
+                        item.quantity = quantity;
+                    }
+            
+                    // Update the cart display
+                    updateCart();
+                }
+            });
+            
+            // Clear cart functionality
+            document.getElementById('clear-cart').addEventListener('click', () => {
+                cart = []; // Reset the cart
+                updateCart(); // Update cart display
+            
+                // Reset all food item buttons to the default state (Add to Cart button visible, quantity control hidden)
+                document.querySelectorAll('.quantity-control').forEach(control => {
+                    control.style.display = 'none'; // Hide the quantity controls
+                });
+                document.querySelectorAll('.add-to-cart').forEach(button => {
+                    button.style.display = 'inline-block'; // Show the Add to Cart button
+                });
+            });
+            </script>            
+      </div></center><br><br>
+      
+      <script src="script1.js"></script>
+    </section>
+
+    <!-- Cart and Order Sections (Side by Side) -->
+    <section id="cart-order" class="py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Cart Section (Left) -->
+          <!-- <div id="cart" class="col-md-6">
+            <h2 class="text-center mb-5">Your Cart</h2>
+            <div id="cart-items" class="mb-4"></div>
+            <h4>Total: ₹<span id="total-price">0.00</span></h4>
+            <button id="clear-cart" class="btn btn-danger mt-3">
+              Clear Cart
+            </button>
+          </div> -->
+
+          <!-- Order Section (Right) -->
+          <center><div id="order" class="col-md-6" style="background-image: url(images/back.avif);">
+            <h2 class="text-center mb-5">Order Details</h2>
+            <form id="order-form">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  id="address"
+                  rows="3"
+                  placeholder="Delivery Address"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Place Order</button>
+            </form>
+          </div></center>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2025 Fried In Fire | All Rights Reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
